@@ -1,0 +1,26 @@
+
+html, body{
+margin: 0;
+padding: 0;
+height: 100%;
+}
+.wrapper{
+min-height: calc(100% - 40px);
+position: relative;
+padding-bottom: 20px;
+
+}
+footer{
+position: absolute;
+bottom: 0px;
+width:100%;
+}
+
+/* Part 4 */
+
+ul{
+list-style-type: square;
+}
+ul>li>ul>li:last-of-type {
+color: red;
+}

@@ -1,2 +1,2 @@
 # IT2805
-Webteknologi
+Øvinger i faget webteknologi

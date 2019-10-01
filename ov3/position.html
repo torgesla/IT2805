@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 3 IT2805</title>
+
+  <style type="text/css">
+
+    html, body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    /* Part 1 */
+
+    .header{
+
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .box{
+      position: relative;
+      border-width: 2px;
+      border-color: #0060A3; /*Blue*/
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      width: 50%;
+      height: 50%;
+    }
+
+    .one{
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+    }
+
+    .two{
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+      background-color: #fff;
+    }
+
+    .three{
+      position: absolute;
+      top: 20%;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+      background-color: #fff;
+    }
+    .four{ /*small box*/
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -25px;
+      margin-top: -25px;
+      width: 50px;
+      height: 50px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+    }
+    .five{ /*CSS is awesome*/
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      font-size: 35px;
+      font-family: sans-serif;
+    }
+
+    /* Part 2 */
+    a:link {
+      color: #FF0000;
+    }
+
+    /* visited link */
+    a:visited {
+      color: #00FF00;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: #FF00FF;
+    }
+
+    /* selected link */
+    a:active {
+      color: #0000FF;
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="header">
+      <h1>Assignment 3: position</h1>
+    </div>
+
+    <div class="box">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three">
+        <div class="four"></div>
+      </div>
+      <div class="five">
+        <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS is awesome</a>
+      </div>
+    </div>
+
+
+
+</body>
+</html>
