@@ -13,34 +13,45 @@ for (const number of numbers){
   else{console.log(number)}
 }
 /* Part 4 */
-document.getElementById('title').innerText = "Hello, JavaScript!";
-/* Part 5 */for (i = 0; i < 5; i++) {
-var text =''
-  text += "The number is " + i + "<br>";
+function changeTitle(){
+  document.getElementById('title').innerText = "Hello, JavaScript!"; /*Change title*/
 }
+/* Part 5 */
 function changeDisplay () {
-
+  document.getElementById("magic").style.display = "none";
 }
 
 function changeVisibility () {
-
+  document.getElementById("magic").style.display = "block";
+  document.getElementById("magic").style.visibility = "hidden";
 }
 
 function reset () {
-
+  document.getElementById("magic").style.display = "block";
+  document.getElementById("magic").style.visibility = "visible";
 }
 
 /* Part 6 */
-const technologies = [
-    'HTML5',
-    'CSS3',
-    'JavaScript',
-    'Python',
-    'Java',
-    'AJAX',
-    'JSON',
-    'React',
-    'Angular',
-    'Bootstrap',
-    'Node.js'
-];
+function addElemementsToList(){
+  const technologies = [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Python',
+      'Java',
+      'AJAX',
+      'JSON',
+      'React',
+      'Angular',
+      'Bootstrap',
+      'Node.js'
+  ];
+  var tech_list =document.getElementById('tech');
+  for (var i = 0; i < technologies.length; i++) {
+    var technology = technologies[i];
+    var li = document.createElement('li'); /*create li element*/
+      li.appendChild(document.createTextNode(technology)); /*add text to element li*/
+      tech_list.appendChild(li); /*append li elemnt to ul list*/
+
+  }
+}
